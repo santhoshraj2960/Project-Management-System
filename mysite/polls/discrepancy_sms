@@ -1,0 +1,22 @@
+"text": "Dear Customer, your Card ending with 4536 is used for INR 247.00 at PayZapp Bill Pay. Current Available balance INR 56.00"
+
+"text": "Dear Customer, statement for your credit card ending 1033 is ready for viewing through Internet Banking. Payment due on 02MAY16, Total payment due Rs.5352.41 Min payment due Rs.267.62.",
+
+"text": "Dear Customer, your Card ending with 4536 is used for INR 800.00 at BIGBASKET COM. Current Available balance INR 900.00", (NO Trans time)
+
+"text": Your credit card xxxxx1033 is used for INR 200.00 on 16\/04\/16 at Paytm. Call 18002090202 (if in india) if you have not used it. (NO TRANS TIME)
+
+
+datetime.strptime('15 Apr 2016  1:33:38', '%d %b %Y %I:%M:%S') + timedelta(hours=5, minutes=30)
+
+Learn how to use regex
+
+
+Rupees detection
+
+"text": "Rs.600.00 was spent on ur HDFCBank CREDIT Card ending 3215 on 2016-04-16:10:28:13 at DIVAKAR S.Avl bal - Rs.528393.00, curr o\/s - Rs.71607.00",
+
+"HSBC: Your credit card xxxxx1033 is used for INR 300.00 on 16\/04\/16 at Paytm. Call 18002090202 (if in india) if you have not used it.",
+
+from polls.views import *
+test_sms_trans()

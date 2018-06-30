@@ -1,0 +1,5 @@
+<ul style="list-style-type: none;">
+    {% for sms_obj in sms_messages %}
+        <li>{{ forloop.counter }} | {{ sms_obj.sender_id }} | {{sms_obj.credit_card_number}} {{ sms_obj.amount }} | {{ sms_obj.sms_received_time }} | {{ sms_obj.transaction_date_time }}</li>
+    {% endfor %}
+</ul>
