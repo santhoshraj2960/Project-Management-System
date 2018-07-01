@@ -27,3 +27,13 @@ How to use Energylabs Task Management
 7) A task can be edited/deleted/changed status only by:
    7.1) The user for whom the task is assigned to 
    7.2) The user who created the task
+
+
+The project by default has 1 user signed up with following credentials
+1) Username : user1
+2) Password : energylabs
+
+This user can be deleted if needed by 
+1) Going into projectmanagement directory
+2) Run python manage.py shell
+3) User.objects.get(username='user1').delete()
