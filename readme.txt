@@ -1,1 +1,29 @@
-A Simple task management system
+
+Energylabs Task Management system is a tool designed for creating and managing tasks.
+
+Requirements
+1) Django 1.8
+2) Python 2.7
+
+How to set it up
+1) Download or Clone the git repo
+2) Navigate inside projectmanagement directory
+3) Run the following command
+   python manage.py migrate
+4) Then start the server using the following command
+   python manage.py runserver
+
+
+How to use Energylabs Task Management
+1) You can create users by going to 
+   http://localhost:8000/todolist/register-user/
+2) Create as many users as you want by specifying a unique username and password. The system does not allow 2 users with same username to register. Make sure to be logged out on the system before trying to create a new user.
+3) Once you have created the users. Visit 
+   http://localhost:8000/todolist/
+   and login to any user by specifying appropriate username and password
+4) Once logged in you can create tasks by clicking on Add task button on the top left corner of screen
+5) Hide completed tasks button on the top right corner hides the compled tasks and displays only pending tasks
+6) To edit/delete/change status of a task click on the task title (which is a link)
+7) A task can be edited/deleted/changed status only by:
+   7.1) The user for whom the task is assigned to 
+   7.2) The user who created the task
