@@ -59,7 +59,7 @@
 
 		  
 			<button class="btn btn-primary" id="AddTaskButton" type="button"
-			  data-toggle="collapse" data-target="#AddEditTask">Add Task</button>
+			  data-toggle="collapse" data-target="#AddEditTask">Add task</button>
 
 			{% if tasks %}
 				<button class="btn btn-primary" id="hide_completed_tasks" type="button"
@@ -84,7 +84,7 @@
 			    <div class="form-group">
 					<p>
 						<label for="id_description">Description:</label>
-						<input class="form-control" type="text" name="description" required="" id="description" placeholder="Description of the task">
+						<textarea class="form-control" type="text" name="description" required="" id="description" placeholder="Description of the task"></textarea>
 					</p>
 			    </div>
 
@@ -135,7 +135,7 @@
 						</tr>
 				    {% endfor %}
 				  </table>
-				  
+
 		    {% endif %}
 
 
