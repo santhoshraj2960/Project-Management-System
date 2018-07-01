@@ -1,0 +1,64 @@
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+
+        <title>Task Management System - Login</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+
+    </head>
+
+    <body>
+
+        <header>
+          <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
+                <a class="navbar-brand" href="/todolist">Energy Labs Task Management System</a>
+            </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <main role="main" class="container" style="padding: 72px 15px 0;">
+
+          
+            <h3>Sign In</h3>
+
+            {% if messages %} <!-- Displays warning messages when wrong username/password entered -->       
+                {% for message in messages %}
+                    <div class="alert alert-danger" role= "alert">{{ message.text }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <form action="/todolist/login-email/" method="post"> {% csrf_token %}
+
+                <div class="form-group">
+                  <p>
+                    <label for="id_username">Username:</label>
+                    <input class="form-control" type="text" name="username" autofocus="" maxlength="254" required="" id="id_username" placeholder="Username">
+                  </p>
+                </div>
+
+                <div class="form-group">
+                  <p>
+                    <label for="id_password">Password:</label>
+                    <input class="form-control" type="password" name="password" required="" id="id_password" placeholder="Password">
+                  </p>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login</button> or
+                <a href='/todolist/registration-page' class="btn btn-success">Signup</a>
+
+            </form>
+
+
+        </main>
+
+
+
+    </body>
+
+</html>
