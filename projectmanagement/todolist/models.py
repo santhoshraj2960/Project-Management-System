@@ -7,11 +7,14 @@ from django.db import models
 class Task(models.Model):
     title = models.CharField(max_length=140)
     description = models.CharField(max_length=1000, null=True)
-    created_date = models.DateField(auto_now_add=True, blank=True, null=True)
-    due_date = models.DateField(blank=True, null=True, )
+    created_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     completed = models.BooleanField(default=False)
-    completed_date = models.DateField(blank=True, null=True)
+    completed_date = models.DateTimeField(blank=True, null=True)
     created_by = models.ForeignKey(User, related_name='todo_created_by', on_delete=models.CASCADE)
-    assigned_to = models.ForeignKey(
-        User, blank=True, null=True, related_name='todo_assigned_to', on_delete=models.CASCADE)
-    note = models.TextField(blank=True, null=True)
+
+# Table to track any changes in status of tasks
+class TaskStatus(models.Model):
+    user = models.ForeignKey(User, related_name='task_status_changed_by', on_delete=models.CASCADE)
+    completed = models.BooleanField(default=False)
+    status_change_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    task = models.ForeignKey(Task, related_name='task_status_changed_by', on_delete=models.CASCADE)

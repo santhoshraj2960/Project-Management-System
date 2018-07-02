@@ -88,16 +88,6 @@
 					</p>
 			    </div>
 
-			    <div class="form-group">
-			    	<p>
-			    		<label for="id_description">Assign To:</label>
-			    		<select name="assigned_to" id="assigned_to" class="custom-select mb-3" required="">
-			    			{% for user in all_users %}
-			    			    <option value="{{user.id}}">{{ user.username }}</option>
-			    			{% endfor %}
-			    		</select>
-			    	</p>
-			    </div>
 			    <button type="submit" class="btn btn-primary">Submit</button>
 			    <button id="cancel_create_task" class="btn btn-success" style="margin-left:12px">Cancel</button>
 			</form>
@@ -108,7 +98,7 @@
 				    <tr class="nodrop">
 						<th>Task</th>
 						<th>Created</th>
-						<th>Assigned to</th>
+						<th>Created by</th>
 						<th>Status</th>
 				    </tr>
 
@@ -121,7 +111,7 @@
 								{{ task.created_date|date:"m/d/Y" }}
 							</td>
 							<td>
-								{% if task.assigned_to %}{{ task.assigned_to }}{% else %}Anyone{% endif %}
+								{{ task.created_by }}
 							</td>
 							<td>
 								<button class="btn btn-info btn-sm" disabled>

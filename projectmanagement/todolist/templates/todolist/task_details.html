@@ -48,8 +48,8 @@
 			<div class="row">
 			    <div class="col-sm-8">
 					<h3 class="task-title" id='title'>{{ task.title }}</h3>
-					{% if task.description %}
-						<p class="task-description" id='description'>{{ task.description }}</p>
+					{% if task.description or track_list %}
+						<p class="task-description" id='description'>{{ task.description }} <br> <br><b>Track List</b><br> {{ track_list }}</p>
 					{% endif %}
 
 					<form action="/todolist/edit-task/" method="post" id='edit_form' style="display:none">
@@ -79,27 +79,27 @@
 			    
 			    <div class="col-sm-4">
 					<ul class="list-group">
-						{% if is_current_user_task %}
-						    <li class="list-group-item">
-						      	<form action="" method="post">{% csrf_token %}
+					    <li class="list-group-item">
+					      	<form action="" method="post">{% csrf_token %}
+
+					      		{% if is_current_user_task %}
 
 						        	<button class="btn btn-sm btn-primary" id="edit_task" type="button"
 						            data-toggle="collapse" data-target="#AddEditTask">Edit Task</button>
+
+						            <a href="/todolist/delete-task?task_id={{task.id}}" class="btn btn-danger btn-sm">Delete</a>
+
+						        {% else %}
 
 						            <a href="/todolist/change-task-status?task_id={{task.id}}" class="btn btn-info btn-sm">
 						              {% if task.completed %} Mark Not Done {% else %} Mark Done {% endif %}
 						            </a>
 
-						            <a href="/todolist/delete-task?task_id={{task.id}}" class="btn btn-danger btn-sm">Delete</a>
+					            {% endif %}
 
-						      	</form>
-						    </li>
-						{% endif %}
 
-						<li class="list-group-item">
-							<strong>Assigned to:</strong>
-							{% if task.assigned_to %} {{ task.assigned_to.username }} {% else %} Anyone {% endif %}
-						</li>
+					      	</form>
+					    </li>
 
 						<li class="list-group-item">
 							<strong>Created by:</strong> {{ task.created_by }}
