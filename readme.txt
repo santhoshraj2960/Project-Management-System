@@ -16,7 +16,7 @@ How to set it up
 
 How to use Energylabs Task Management
 1) You can create users by going to 
-   http://localhost:8000/todolist/register-user/
+   http://localhost:8000/todolist/registration-page/
 2) Create as many users as you want by specifying a unique username and password. The system does not allow 2 users with same username to register. Make sure you are logged out on ELTMS before trying to create a new user.
 3) Once you have created the users, Visit 
    http://localhost:8000/todolist/
