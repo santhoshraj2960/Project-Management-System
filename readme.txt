@@ -1,6 +1,8 @@
 
 Energylabs Task Management system (ELTMS) is a tool designed for creating and managing tasks.
 
+Screen shots: https://github.com/santhoshraj2960/enerylabs/tree/master/Screen%20Shots%20of%20Project
+
 Requirements
 1) Django 1.8
 2) Python 2.7
