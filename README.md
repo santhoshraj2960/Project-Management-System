@@ -1,13 +1,13 @@
 
-Energylabs Task Management system (ELTMS) is a tool designed for creating and managing tasks.
+Energylabs **Task Management system (ELTMS)** is a tool designed for creating and managing tasks.
 
-Screen Shots:  https://github.com/santhoshraj2960/enerylabs/tree/master/Screen%20Shots%20of%20Project
+**Screen Shots:**  https://github.com/santhoshraj2960/enerylabs/tree/master/Screen%20Shots%20of%20Project
 
 Requirements
 1) Django 1.8
 2) Python 2.7
 
-How to set it up
+**How to set it up**
 1) Download or Clone the git repo on your local system
 2) Navigate inside projectmanagement directory
 3) Run the following command
@@ -15,7 +15,7 @@ How to set it up
 4) Then start the server using the following command
    python manage.py runserver
 
-How to use Energylabs Task Management
+**How to use Energylabs Task Management**
 1) You can create users by going to 
    http://localhost:8000/todolist/registration-page/
 2) Create as many users as you want by specifying a unique username and password. The system does not allow 2 users with same username to register. Make sure you are logged out on ELTMS before trying to create a new user.
