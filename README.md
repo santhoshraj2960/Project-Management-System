@@ -2,6 +2,7 @@
 Energylabs **Task Management system (ELTMS)** is a tool designed for creating and managing tasks.
 
 **Screen Shots:**  https://github.com/santhoshraj2960/enerylabs/tree/master/Screen%20Shots%20of%20Project
+![Image of social media scheduler](https://drulib.s3.amazonaws.com/social_media_scheduler.png)
 
 Requirements
 1) Django 1.8
