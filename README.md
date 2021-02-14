@@ -1,9 +1,39 @@
 
 Energylabs **Task Management system (ELTMS)** is a tool designed for creating and managing tasks.
 
-**Screen Shots:**  https://github.com/santhoshraj2960/enerylabs/tree/master/Screen%20Shots%20of%20Project
 
-![Image of social media scheduler](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.38.39.png)
+# Registration page
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.33.37.png)
+
+
+# On Successful registration
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.34.55.png)
+
+
+# Login page
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.35.12.png)
+
+
+# Initial dashboard
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.36.07.png)
+
+
+# Add a new task dialog box
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.36.14.png)
+
+
+# New task dialog box filled with necessary information
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.38.39.png)
+
+
+# Dashboard containing the added task
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.38.51.png)
+
+# Edit task page
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.39.01.png)
+
+# Edit task page 2
+![alt text](https://github.com/santhoshraj2960/Project-Management-System/blob/master/Screen%20Shots%20of%20Project/Screen%20Shot%202018-07-01%20at%2023.39.09.png)
 
 Requirements
 1) Django 1.8
